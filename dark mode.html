@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="darkmode.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body id="col">
+    <div class="button" id="btn">
+        <p class="off"><i id="icon" class="ri-sun-fill"></i>
+            <span  id="darkon">Light</span></p>
+    </div>
+    
+    <script>   
+            let d=document.getElementById("darkon")
+            let l=document.querySelector("i");
+            let bt=document.getElementById("btn");
+            let cl=document.getElementById("col")
+            f=0;
+            bt.addEventListener("click",function(){
+                if(f==0){
+                    d.innerHTML="Dark"
+                    l.className="ri-moon-fill"
+                    f=1;
+                    cl.style.backgroundColor="black"
+                }
+                else if(f==1){
+                    d.innerHTML="Light"
+                    l.className="ri-sun-fill"
+                    f=0;
+                    cl.style.backgroundColor="white"
+                   
+                }
+            })
+            
+             
+    </script>
+</body>
+</html>

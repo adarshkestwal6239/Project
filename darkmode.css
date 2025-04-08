@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: black;  */
+    
+}
+.button{
+    border: 2px solid black;
+    width: 120px;
+    height: 50px;
+    border-radius: 100px;
+    margin-top: 300px;
+    margin-left: 650px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.off{
+    width: 80px;
+    font-size: 35px;
+    margin-left: 5px;
+    border-radius: 100px;
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+    background-color: white;
+    color: black;
+    
+}
+#icon{
+    font-size: 28px;
+    margin-top: 5px;
+}
